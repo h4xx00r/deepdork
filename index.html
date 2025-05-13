@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - DeepDork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='./r4gh4v' name='author'/>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .m-text {
+            font-size: 40px;
+            font-weight: bold;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #008000;
+            animation: matrixGlow 1.5s infinite alternate;
+        }
+        @keyframes matrixGlow {
+            from { text-shadow: 0 0 5px #00ff00, 0 0 10px #008000; }
+            to { text-shadow: 0 0 20px #00ff00, 0 0 30px #008000; }
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            text-shadow: 2px 2px 5px #ff0066;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .google-btn {
+            background: #ff0066;
+            color: white;
+        }
+        .github-btn {
+            background: #0073e6;
+            color: white;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        .follow-me {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+        }
+        .follow-me a {
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .follow-me a:hover {
+            color: #ff0066;
+            transform: scale(1.2);
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="m-text">DeepDork: The Ultimate</div>
+
+    <h1>Choose Your Dorking Option</h1>
+
+    <div class="button-container">
+        <a href="google_dorks.html" class="btn google-btn">Google Dorks</a>
+        <a href="github_dorks.html" class="btn github-btn">GitHub Dorks</a>
+    </div>
+
+    <!-- Follow Me Section -->
+    <div class="follow-me">
+        <a href="https://r4gh4v.medium.com" target="_blank"><i class="fab fa-medium"></i></a>
+        <a href="https://github.com/w0lf403" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/w0lf403" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+</body>
+</html>
