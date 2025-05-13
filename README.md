@@ -2,10 +2,10 @@
 <img src="img/deepdork.jpg" alt="DeepDork" width="700">
 
 ## [Visit DeepDork](https://w0lf403.github.io/deepdork/)
+
 ## 🔍 Introduction
 **DeepDork** is a powerful reconnaissance tool designed for **Google dorking & GitHub dorking** for security researchers, penetration testers, and ethical hackers. DeepDork uses search engine like Google and Github for sensitive information gathering, making it effortless to uncover sensitive data and code leaks.
 
-### `Tool Link` - https://w0lf403.github.io/deepdork
 ## ⚡ Summary
 - **Web-Based Platform** – Access DeepDork through a fully functional website.
 - **Google Dorks** – Generate advanced search queries for **Google-based reconnaissance**.
@@ -15,4 +15,6 @@
 💡 Whether you're a **bug bounty hunter, OSINT investigator, or cybersecurity professional**, DeepDork helps you **find what others can't**.
 
 🔗 **Check it out** and level up your dorking game!
+
+### `Access Link` - https://w0lf403.github.io/deepdork
 
