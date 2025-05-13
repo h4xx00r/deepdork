@@ -1,5 +1,5 @@
 # 🚀 DeepDork - The Ultimate Search Engine
-<img src="img/deepdork.jpg" alt="DeepDork" width="700">
+<img src="img/deepdork.jpg" alt="DeepDork" width="800" height="400">
 
 ## [Visit DeepDork](https://w0lf403.github.io/deepdork/)
 
@@ -17,4 +17,10 @@
 🔗 **Check it out** and level up your dorking game!
 
 ### `Access Link` - https://w0lf403.github.io/deepdork
+
+## Usage ✈️
+<img src="img/deepdork.gif" width="1000" height="600"/>
+
+### [Follow on Twitter](https://x.com/w0lf403)
+
 
