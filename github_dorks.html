@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github Dorks - dorkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='./r4gh4v' name='author'/>
+    <link rel="icon" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        function getKeywords() {
+            $.get($('#url').val(), function(resp) {
+                document.getElementById('keywords').value = resp;
+            });
+        }
+		function Generate() {
+		    $("#result").empty();
+		    $.each($('#keywords').val().split('\n'), function(){
+		        var keyword = encodeURIComponent(this.trim()); // Preserve spaces by encoding
+		        var link = "https://github.com/search?q=" + encodeURIComponent($('#target').val()) + " " + keyword + "&type=Code";
+		        $('#result').append("<tr><td><input type=\"checkbox\"></td><td> <a href=\"" + link + "\" target=\"_blank\">" + this + "</a></td></tr>");
+		    });
+		}
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            text-shadow: 2px 2px 5px #ff0066;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            padding-top: 30px;
+        }
+        .left-box {
+            width: 40%;
+        }
+        .right-box {
+            width: 55%;
+        }
+        .box {
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
+            margin-bottom: 15px;
+        }
+        input, button, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        button {
+            cursor: pointer;
+            background: #ff0066;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #ff3385;
+        }
+        #result {
+            height: 600px;
+            overflow-y: scroll;
+            border-radius: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 GITHUB DORKS 🚀</h1>
+
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-box">
+            <div class="box">
+                <label><strong>Load Keywords:</strong></label>
+                <input type="text" id="url" value="https://raw.githubusercontent.com/w0lf403/deepdork/refs/heads/main/dorks/github-dorks.txt">
+                <button onclick="getKeywords()">Get Keywords</button>
+                <label><strong>Enter Target:</strong></label>
+                <input type="text" id="target" placeholder='example.com'>
+                <button onclick="Generate()">Generate Link</button>
+            </div>
+
+            <div class="box">
+                <label><strong>Keywords:</strong></label>
+                <textarea id="keywords" cols="46" rows="10"></textarea> 
+            </div>
+        </div>
+
+        <!-- Right Panel (Full results) -->
+        <div class="right-box">
+            <div class="box">
+                <label><strong>Results:</strong></label>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <br>
+        2025 | Created with ❤️ by <a href="https://x.com/w0lf403" style="color: #ff0066;">./r4gh4v</a>
+        <br>
+    </center>
+</body>
+</html>
