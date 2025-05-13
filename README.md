@@ -1,4 +1,4 @@
-# 🚀 DeepDork - The Ultimate Search Engine
+# DeepDork - The Ultimate Search Engine 🚀
 <img src="img/deepdork.jpg" alt="DeepDork" width="800" height="400">
 
 ## [Visit DeepDork](https://w0lf403.github.io/deepdork/)
