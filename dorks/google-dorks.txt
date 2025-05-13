@@ -1,0 +1,207 @@
+”choose file”
+ext:action | ext:adr | ext:ascx | ext:asmx | ext:axd | ext:backup | ext:bak
+ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+ext:bkf | ext:bkp | ext:bok | ext:achee | ext:cfg | ext:cfm | ext:cgi | ext:cnf | ext:conf
+ext:config | ext:crt | ext:csr | ext:csv | ext:dat | ext:doc | ext:docx
+ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv | ext:sql | ext:dbf | ext:mdb
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:"budget approved") inurl:confidentialext:inc "pwd=" "UID="
+ext:eml | ext:env | ext:exe | ext:gz | ext:ica | ext:inf | ext:ini | ext:java | ext:json
+ext:ini eudora.ini
+ext:ini intext:env.ini
+ext:ini Version=4.0.0.4 password
+ext:ini Version=... password
+ext:key | ext:log | ext:lst | ext:mai | ext:mbox | ext:mbx | ext:md | ext:mdb
+ext:mdb inurl:*.mdb inurl:fpdb shop.mdb
+ext:nsf | ext:old | ext:ora | ext:pac | ext:passwd | ext:pcf | ext:pdf | ext:pem | ext:pgp
+ext:pl | ext:plist | ext:pwd | ext:rdp | ext:reg | ext:rtf | ext:skr | ext:sql | ext:swf
+ext:tpl | ext:txt | ext:url | ext:wml | ext:xls | ext:xlsx | ext:xml | ext:xsd | ext:yml
+ext:txt | ext:pdf | ext:xml | ext:xls | ext:xlsx | ext:ppt | ext:pptx | ext:doc | ext:docx intext:“confidential” | intext:“Not for Public Release” | intext:”internal use only” | intext:“do not distribute”
+ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env
+filetype:asp "Custom Error Message" Category Source
+filetype:asp “Custom Error Message” Category Source
+filetype:asp   DBQ=" * Server.MapPath("*.mdb")
+filetype:asp DBQ=\" * Server.MapPath(\"*.mdb\")
+filetype:asp + "[ODBC SQL"
+filetype:bak createobject sa
+filetype:bak inurl:"htaccess|passwd|shadow|htusers"
+filetype:conf inurl:firewall -intitle:cvs
+filetype:conf inurl:proftpd. PROFTP FTP server configuration file reveals
+filetype:dat "password.dat
+filetype:dat \"password.dat\"
+filetype:eml eml +intext:"Subject" +intext:"From" +intext:"To"
+filetype:eml eml +intext:\"Subject\" +intext:\"From\" +intext:\"To\"
+filetype:eml eml +intext:”Subject” +intext:”From” +intext:”To”
+filetype:inc dbconn
+filetype:inc intext:mysql_connect
+filetype:inc mysql_connect OR mysql_pconnect
+filetype:log inurl:"password.log"
+filetype:log “PHP Parse error” | “PHP Warning” | “PHP Error”
+filetype:log username putty PUTTY SSH client logs can reveal usernames
+filetype:mdb inurl:users.mdb
+filetype:ora ora
+filetype:ora tnsnames
+filetype:pass pass intext:userid
+filetype:pdf "Assessment Report" nessus
+filetype:pem intext:private
+filetype:properties inurl:db intext:password
+filetype:pst inurl:"outlook.pst"
+filetype:pst pst -from -to -date
+filetype:reg reg HKEY_CURRENT_USER SSHHOSTKEYS
+filetype:reg reg HKEY_ Windows Registry exports can reveal
+filetype:reg reg +intext:â? WINVNC3â?
+filetype:reg reg +intext:"defaultusername" +intext:"defaultpassword"
+filetype:reg reg +intext:\"defaultusername\" +intext:\"defaultpassword\"
+filetype:reg reg +intext:”defaultusername” +intext:”defaultpassword”
+filetype:sql +"IDENTIFIED BY" -cvs
+filetype:sql "insert into" (pass|passwd|password)
+filetype:sql “insert into” (pass|passwd|password)
+filetype:sql (\"passwd values\" | \"password values\" | \"pass values\" )
+filetype:sql password
+filetype:sql password
+filetype:sql ("values * MD5" | "values * password" | "values * encrypt")
+filetype:sql (\"values * MD\" | \"values * password\" | \"values * encrypt\")
+filetype:SWF SWF
+filetype:TXT TXT
+filetype:url +inurl:"ftp://" +inurl:";@"
+filetype:url +inurl:\"ftp://\" +inurl:\";@\"
+filetype:url +inurl:”ftp://” +inurl:”;@”
+filetype:xls inurl:"email.xls"
+filetype:xls username password email
+filetype:XLS XLS
+"index of" "database.sql.zip"
+index.of.dcim
+index of: intext:Gallery in Configuration mode
+"Index of" inurl:htdocs inurl:xampp
+"Index of" inurl:phpmyadmin
+"Index of" inurl:webalizer
+index.of passlist
+index.of.password
+index.of perform.ini mIRC IRC ini file can list IRC usernames and
+intext:"About Mac OS Personal Web Sharing"
+intext:"An illegal character has been found in the statement" -"previous message"
+intext:"ASP.NET_SessionId" "data source="
+intext:"A syntax error has occurred" filetype:ihtml
+intext:"AutoCreate=TRUE password=*"
+intext:""BiTBOARD v2.0" BiTSHiFTERS Bulletin Board"
+intext:"Can't connect to local" intitle:warning
+intext:"class JConfig {" inurl:configuration.php
+intext:"Establishing a secure Integrated Lights Out session with" OR intitle:"Data Frame - Browser not HTTP 1.1 compatible" OR intitle:"HP Integrated Lights-
+intext:"Fatal error: Call to undefined function" -reply -the -next
+intext:"Fill out the form below completely to change your password and user name. If new username is left blank, your old one will be assumed." -edu
+intext:" -FrontPage-" ext:pwd inurl:(service | authors | administrators | users)
+intext:"# -FrontPage-" ext:pwd inurl:(service | authors | administrators | users) "# -FrontPage-" inurl:service.pwd
+intext:"Generated by phpSystem"
+intext:"@gmail.com" AND intext:"@yahoo.com" filetype:sql
+intext:"HostingAccelerator" intitle:"login" +"Username" -"news" -demo
+intext:"Host Vulnerability Summary Report"
+intext:"IMail Server Web Messaging" intitle:login
+intext:"Incorrect syntax near"
+intext:"Index of /admin"
+intext:"Index of /backup"
+intext:"Index of" /"chat/logs"
+intext:"Index of /" +.htaccess
+intext:"Index of /mail"
+intext:"Index of /network" "last modified"
+intext:"Index of /" +passwd
+intext:"Index of /password"
+intext:"Index of /" +password.txt
+intext:"#mysql dump" filetype:sql
+intext:"#mysql dump" filetype:sql 21232f297a57a5a743894a0e4a801fc3
+intextpassword | passcode)   intextusername | userid | user) filetype:csv
+intextpassword | passcode) intextusername | userid | user) filetype:csv
+intext:"phpMyAdmin MySQL-Dump" filetype:txt
+intext:"phpMyAdmin MySQL-Dump" "INSERT INTO" -"the"
+intext:"phpMyAdmin" "running on" inurl:"main.php"
+intext:"SQL Server Driver][SQL Server]Line 1: Incorrect syntax near"
+intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
+intext:"Thank you for your order"   +receipt
+intext:"Thank you for your order" +receipt
+intext:"Thank you for your purchase" +download
+intext:"The following report contains confidential information" vulnerability -search
+intitle:"Apache2 Ubuntu Default Page: It works"
+intitle:"IIS Windows Server" -inurl:"IIS Windows Server"
+intitle:index.of
+intitle:"index.of *" admin news.asp configview.asp
+intitle:"index of" "/aws.s3/"
+intitle: "index of" "./" "./bitcoin"
+intitle:"index of" ".cpanel/caches/config/"
+intitle:"index of" etc/shadow
+intitle:"index of" hosts.csv | firewalls.csv | linux.csv | windows.csv
+intitle:"index of" htpasswd
+intitle:"index of /" intext:/backup
+intitle:"Index of" inurl:wp-json/oembed
+intitle:"index of" members OR accounts
+intitle:"index of" mysql.conf OR mysql_config
+intitle:"index of" passwd
+intitle:"index of" people.lst
+intitle:"Index of" phpmyadmin
+intitle:"index of" pwd.db
+intitle:"index of" spwd
+intitle:index.of.?.sql
+intitle:"index of" unattend.xml
+intitle:"index of" user_carts OR user_cart
+intitle:"Index of" wp-admin
+intitle:OmniDB intext:"user. pwd. Sign in."
+intitle:"qBittorrent Web UI" inurl:8080
+intitle:"Swagger UI - " + "Show/Hide"
+intitle:Test Page for the Nginx HTTP Server on Fedora
+inurl:access= | inurl:account= | inurl:action= | inurl:activity= | inurl:adm= | inurl:admin= | inurl:alter= | inurl:api= | inurl:api_key= | inurl:arg= inurl:&
+inurl:/admin/index.php
+inurl:admin | inurl:jenkins | inurl:test | inurl:proxy | inurl:stage | inurl:test | inurl:dev | inurl:devops | inurl:staff | inurl:demo
+inurl:admin inurl:userlist Generic userlist files
+inurl: admin/login.aspxPages Containing Login Portals
+inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer
+inurl:app/kibana intext:Loading Kibana
+inurl:bc.googleusercontent.com intitle:index of
+inurl:begindate= | inurl:board= | inurl:callback= | inurl:cat= | inurl:categoryid= | inurl:cfg= | inurl:cgi-bin/redirect.cgi | inurl:cgi-bin/redirect.cgi? inurl:&
+inurl:cgi/login.pl
+inurl:checkout= | inurl:checkout_url= | inurl:cli= | inurl:clone= | inurl:cmd= | inurl:code= | inurl:column= | inurl:command= | inurl:conf= | inurl:config= inurl:&
+inurl:config | inurl:env | inurl:setting | inurl:backup | inurl:admin
+inurl:conf | inurl:env | inurl:cgi | inurl:bin | inurl:etc | inurl:root | inurl:sql | inurl:backup | inurl:admin | inurl:php
+inurl:content= | inurl:continue= | inurl:create= | inurl:csrf_token= | inurl:daemon= | inurl:data= | inurl:date= | inurl:dbg= | inurl:debug= | inurl:delete= inurl:&
+inurl:/content/usergenerated | inurl:/content/dam | inurl:/jcr:content | inurl:/libs/granite | inurl:/etc/clientlibs | inurl:/content/geometrixx | inurl:/bin/wcm | inurl:/crx/de
+inurl:_cpanel/forgotpwd
+inurl:Dashboard.jspa intext:"Atlassian Jira Project Management Software"
+inurl:db | inurl:qa | inurl:internal | inurl:env | inurl:dev | inurl:staging | inurl:sandbox | inurl:debug | inurl:temp | inurl:internal
+inurl:dest= | inurl:destination= | inurl:detail= | inurl:dir= | inurl:disable= | inurl:do= | inurl:doc= | inurl:document= | inurl:domain= | inurl:download= inurl:&
+inurl:edit= | inurl:email= | inurl:emailto= | inurl:enable= | inurl:enddate= | inurl:exe= | inurl:exec= | inurl:execute= | inurl:feature= | inurl:feed= | inurl:fetch= inurl:&
+inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:&
+inurl:"error" | intitle:"exception" | intitle:"failure" | intitle:"server at" | inurl:exception | "database error" | "SQL syntax" | "undefined index" | "unhandled exception" | "stack trace"
+inurl:field= | inurl:file= | inurl:file_name= | inurl:filename= | inurl:filename= | inurl:file_url= | inurl:filter= | inurl:folder= | inurl:folder_url= | inurl:forward= inurl:&
+inurl:/filedown.php?file=
+inurl: /filemanager/dialog.php
+inurl:from= | inurl:from_url= | inurl:func= | inurl:function= | inurl:go= | inurl:goto= | inurl:grant= | inurl:group= | inurl:host= | inurl:html= | inurl:*id= inurl:&
+inurl:id= | inurl:image_url= | inurl:img= | inurl:img_url= | inurl:immagine= | inurl:inc= | inurl:include= | inurl:ip= | inurl:item= | inurl:jsonp= | inurl:jump= inurl:&
+inurl:/index.aspx/login
+inurl:index.php?id=
+inurl:key= | inurl:keyword= | inurl:keywords= | inurl:l= | inurl:lang= | inurl:layout= | inurl:list_type= | inurl:Lmage_url= | inurl:load= | inurl:load_file= inurl:&
+inurl:load_url= | inurl:locate= | inurl:log= | inurl:login?to= | inurl:login_url= | inurl:logout= | inurl:make= | inurl:mod= | inurl:modify= | inurl:module= inurl:&
+inurl:/login/index.jsp -site:hertz.*
+inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth | inurl:login | intitle:signin | intitle:login | intitle:signin | inurl:secure
+inurl:month= | inurl:name= | inurl:navigation= | inurl:next= | inurl:next_page= | inurl:no= | inurl:number= | inurl:open= | inurl:Open= | inurl:option= inurl:&
+inurl:office365 AND intitle:"Sign In | Login | Portal"
+inurl:order= | inurl:out= | inurl:p= | inurl:page= | inurl:page_id= | inurl:page_url= | inurl:params= | inurl:password= | inurl:path= | inurl:payload= inurl:&
+inurl:pdf= | inurl:pg= | inurl:php_path= | inurl:ping= | inurl:port= | inurl:prefix= | inurl:preview= | inurl:print= | inurl:process= | inurl:profile= inurl:&
+inurl:php
+inurl:php?id=
+inurl:/portal/apis/fileExplorer/
+inurl:q= | inurl:query= | inurl:read= | inurl:redir= | inurl:redirect= | inurl:redirect_to= | inurl:redirect_uri= | inurl:redirect_url= | inurl:referance= inurl:&
+inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:&
+inurl:reference= | inurl:reg= | inurl:rename= | inurl:report= | inurl:req= | inurl:reset= | inurl:results= | inurl:return= | inurl:return_path= inurl:&
+inurl:return_to= | inurl:returnTo= | inurl:return_url= | inurl:role= | inurl:root= | inurl:row= | inurl:rt= | inurl:run= | inurl:rurl= | inurl:s= inurl:&
+inurl:'/scopia/entry/index.jsp'
+inurl:search= | inurl:sel= | inurl:select= | inurl:shell= | inurl:show= | inurl:site= | inurl:sleep= | inurl:sort= | inurl:step= | inurl:string= inurl:&
+inurl:"server-status" intitle:"Apache Status" intext:"Apache Server Status for"
+inurl:signup | inurl:register | intitle:Signup
+inurl:style= | inurl:table= | inurl:target= | inurl:template= | inurl:terms= | inurl:test= | inurl:to= | inurl:toggle= | inurl:token= | inurl:type= inurl:&
+inurl:unsubscribe_token= | inurl:update= | inurl:upload= | inurl:uri= | inurl:url= | inurl:user= | inurl:userid= | inurl:username= | inurl:val= inurl:&
+inurl:validate= | inurl:view= | inurl:where= | inurl:window= | inurl:year= inurl:&
+inurl:zoom.us/j and intext:scheduled for
+"PHP Parse error" | "PHP Warning" | "PHP Error"
+s3 site:amazonaws.com filetype:log
+s3 site:amazonaws.com intext:dhcp filetype:txt inurl:apollo
+site:accounts..com/signin/ intitle:"index of" drupal intitle:"index of" admin inurl:login.cgiPages Containing Login Portals site:/joomla/administrator
+site:amazonaws.com inurl:login.php
+site:*/auth intitle:login
+site:com inurl:jboss filetype:log -github.com
+site:drive.google.com /preview intext:movie inurl:flv | wmv | mp4 -pdf -edit -view
