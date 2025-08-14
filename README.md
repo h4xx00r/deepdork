@@ -16,7 +16,7 @@
 
 🔗 **Check it out** and level up your dorking game!
 
-### `Access Link` - https:///h4xx00r.github.io/deepdork
+### `Access Link` - [deepdork](https:///h4xx00r.github.io/deepdork)
 
 ## Usage ✈️
 <img src="img/deepdork.gif" width="1000" height="600"/>
